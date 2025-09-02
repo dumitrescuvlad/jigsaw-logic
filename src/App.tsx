@@ -61,8 +61,6 @@ export default function App() {
 
   React.useEffect(() => {
     if (status) {
-      // Simple notify on completion
-      // eslint-disable-next-line no-alert
       alert(`Puzzle complete with ${drawn} pieces (reward ${status}).`);
     }
   }, [status, drawn]);
